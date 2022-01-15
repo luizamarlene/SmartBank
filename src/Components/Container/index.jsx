@@ -3,6 +3,7 @@ import {Titulo} from "../Titulo";
 import Conta from "../Conta";
 import { Container, Conteudo } from "./styles";
 import Extrato from "../Extrato";
+import Footer from '../Footer';
 
 export default () => {
   return (
@@ -12,6 +13,7 @@ export default () => {
         <Conta />
         <Extrato/>
       </Conteudo>
+    
     </Container>
   );
 };

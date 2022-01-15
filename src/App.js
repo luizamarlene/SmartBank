@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components";
 import { temaEscuro, temaClaro } from "./Components/UI/theme";
 import { BtnTema } from "./Components/UI";
 import SwitcherTema from "./Components/SwitcherTema";
+import Footer from "./Components/Footer";
 
 function App() {
   const [tema,setTema] = useState(true);
@@ -25,7 +26,5 @@ function App() {
       <Cabecalho />
       <Container />
     </ThemeProvider>
-  );
-}
-
+  )}
 export default App;
