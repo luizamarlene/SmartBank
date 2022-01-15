@@ -5,6 +5,10 @@ export const Icone = styled.img`
   width: 25px;
 `;
 
+export const IconeTema =  styled(Icone)`
+  filter: ${({theme}) => theme.filter};
+`;
+console.log(IconeTema);
 export const IconeMargin = styled(Icone)`
   margin-top: 2px;
 `;
@@ -12,7 +16,7 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: ${({ theme }) => theme.inside};
   border-radius: 5px;
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
   padding: 20px;
@@ -22,7 +26,6 @@ export const Box = styled.div`
     width: 95%;
     margin: 5px;
   }
-
 `;
 export const Btn = styled.button`
   margin: 15px auto 0px auto;
@@ -40,12 +43,17 @@ export const Btn = styled.button`
 export const Saldo = styled.div`
   font-weight: 700;
   font-size: 32px;
-
-`
+`;
 export const Detalhe = styled.span`
   color: #41d3be;
   font-size: 24px;
+`;
 
-`
-
-
+export const BtnTema = styled.button`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+`;
